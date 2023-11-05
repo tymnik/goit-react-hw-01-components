@@ -3,7 +3,7 @@ import data from '../json/data.json';
 import './Statistics.css';
 
 const Statistics = () => {
-  const { title, stats } = data;
+  const { title } = data;
 
   return (
     <section className="statistics">
