@@ -1,0 +1,36 @@
+.statistics {
+    width: 300px;
+    margin: 50px auto;
+    background-color: rgb(245, 245, 238);
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.statTitle {
+    text-transform: uppercase;
+    color: rgb(70, 68, 68);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.statList {
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid rgb(255, 255, 255);
+    width: 52px;
+    background-color: rgb(228, 228, 228);
+
+}
+
+.statLabel {
+    font-weight: 500;
+}
