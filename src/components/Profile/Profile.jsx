@@ -1,6 +1,6 @@
 import React from 'react';
 import userData from '../json/user.json';
-import styles from './Profile.css';
+import './Profile.css';
 
 const Profile = () => {
   const { username, tag, location, avatar, stats } = userData;

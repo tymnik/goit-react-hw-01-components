@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../json/data.json';
-import styles from './Statistics.css';
+import './Statistics.css';
+
 const Statistics = () => {
   const { title, stats } = data;
 
