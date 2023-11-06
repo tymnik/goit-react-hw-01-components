@@ -1,10 +1,7 @@
 import React from 'react';
-import userData from '../json/user.json';
 import './Profile.css';
 
-const Profile = () => {
-  const { username, tag, location, avatar, stats } = userData;
-
+const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className="profile">
       <div className="description">
@@ -14,15 +11,15 @@ const Profile = () => {
         <p className="location">{location}</p>
       </div>
       <ul className="stats">
-        <li className='statsItem'>
+        <li className="statsItem">
           <span className="label">Followers</span>
           <span className="quantity">{stats.followers}</span>
         </li>
-        <li className='statsItem'>
+        <li className="statsItem">
           <span className="label">Views</span>
           <span className="quantity">{stats.views}</span>
         </li>
-        <li className='statsItem'>
+        <li className="statsItem">
           <span className="label">Likes</span>
           <span className="quantity">{stats.likes}</span>
         </li>

@@ -1,17 +1,12 @@
 import React from 'react';
-import data from '../json/data.json';
 import './Statistics.css';
 
-const Statistics = () => {
-  const { title } = data;
-
+const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      <h2 className="statTitle">
-        Upload stats{title && <h2>{title}</h2>}
-      </h2>
+      <h2 className="statTitle">{title && <h2>{title}</h2>}</h2>
       <ul className="statList">
-        {data.map(stat => (
+        {stats.map(stat => (
           <li key={stat.id} className="item">
             <span className="statLabel">{stat.label}</span>
             <span className="percentage">{stat.percentage}%</span>
